@@ -75,6 +75,7 @@ img {
     border-radius: 0.6em;
     line-height: 1.7em;
     padding: 5%;
+    padding-left: 0%;
 }
 
 li {
@@ -136,7 +137,7 @@ li {
 
 
 
-@media (min-width:600px) {
+@media (min-width:1100px) {
 
     #tribute-info {
         display: grid;
@@ -163,7 +164,7 @@ li {
 
     blockquote {
 
-        font-size: 1.2em;
+        font-size: 1.7vw;
         font-style: italic;
         font-weight: bolder;
         line-height: 6vh;
@@ -171,9 +172,14 @@ li {
 
     }
 
+    html {
+        font-size: 1.2vw;
+
+    }
+
 }
 
-@media (max-width:600px) {
+@media (max-width:1100px) {
 
     #tribute-info {
         display: grid;
@@ -206,12 +212,13 @@ li {
     }
 
     html {
-        font-size: 3vw;
+        font-size: 2vw;
+
     }
 
     blockquote {
 
-        font-size: 3vw;
+        font-size: 2.2vw;
         font-style: italic;
         font-weight: bolder;
         line-height: 4vh;
@@ -221,11 +228,46 @@ li {
 
 }
 
+
+@media (max-width:800px) {
+
+    html {
+        font-size: 3vw;
+    }
+
+    blockquote {
+
+        font-size: 3.2vw;
+        font-style: italic;
+        font-weight: bolder;
+        line-height: 4vh;
+        color: black;
+
+    }
+
+    #img-div {
+        margin: 10vh auto;
+        max-width: 90vw;
+    }
+
+    #img-caption {
+        font-size: 2vw;
+    }
+
+}
+
+
 #awards {
     width: 80%;
+    text-align: left;
     height: auto;
     padding-bottom: 2vh;
+    padding-left: 5%;
     border-bottom: 0.1em solid var(--claro);
+}
+
+ul {
+    padding-inline-start: 30px;
 }
 
 #briefBiography {
