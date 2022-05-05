@@ -1,0 +1,237 @@
+body {
+    background-color: var(--oscuro);
+}
+
+
+:root {
+    --claro: #e9ecef;
+    /* --medio: #adb5bd; */
+    --medio: #bdc5ce;
+    text-align: justify;
+    --oscuro: #adb5bd;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#title {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 6vh;
+    text-align: center;
+    color: black;
+
+    padding: 0.5vh 10vw 5vh 10vw;
+    font-size: 4vw;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 0.3vh solid var(--medio);
+
+}
+
+img {
+    /* -webkit-filter: grayscale(1);
+  
+    filter: gray;
+  
+    filter: grayscale(1); */
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#img-div {
+    /* display: flex;
+    flex-direction: column; */
+    display: block;
+    background-color: var(--medio);
+    margin: 10vh auto;
+    max-width: 70vw;
+
+}
+
+#img-caption {
+    display: block;
+    padding: 0.5vh 0.9vw 0.5vh 0.9vw;
+    /* justify-content: center;
+    margin: auto;
+    max-width: 10vw;
+    height: auto; */
+    background-color: var(--medio);
+}
+
+#full-content {
+    background-color: var(--claro);
+    margin: 5vh auto;
+    border-radius: 0.5em;
+    padding: 1em 0.5em;
+    width: 95%;
+}
+
+
+#div1 {
+    grid-area: prizes;
+    width: fit-content;
+    background-color: var(--medio);
+    border-radius: 0.6em;
+    line-height: 1.7em;
+    padding: 5%;
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+#div2 {
+    grid-area: content;
+
+    display: grid;
+    row-gap: 1em;
+    align-items: center;
+
+    max-width: 100%;
+    height: auto;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "biography"
+        "mijaphrase";
+
+    background-color: var(--claro);
+    border-radius: 0.6em;
+    line-height: 1.7em;
+    padding: 3%;
+    border: 0.2em solid var(--medio);
+}
+
+#div-2-1 {
+    margin: 0 auto;
+    border-radius: 0.6em;
+    padding: 2%;
+    grid-area: biography;
+    background-color: var(--claro);
+
+
+}
+
+#div-2-2 {
+    margin: 0 auto;
+    border-radius: 0.6em;
+    padding: 2%;
+    grid-area: mijaphrase;
+    background-color: var(--medio);
+
+}
+
+#div3 {
+    justify-self: center;
+
+    grid-area: footer;
+    background-color: var(--medio);
+    border-radius: 0.6em;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    text-align: center;
+}
+
+
+
+@media (min-width:600px) {
+
+    #tribute-info {
+        display: grid;
+        column-gap: 4em;
+        row-gap: 0.6em;
+        grid-template-columns: 1.7fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            " content prizes"
+            "footer footer"
+        ;
+
+        align-items: center;
+
+        background-color: var(--claro);
+        width: auto;
+
+        height: auto;
+
+        padding: 1%;
+
+        border-radius: 0.6em;
+    }
+
+    blockquote {
+
+        font-size: 1.2em;
+        font-style: italic;
+        font-weight: bolder;
+        line-height: 6vh;
+        color: black;
+
+    }
+
+}
+
+@media (max-width:600px) {
+
+    #tribute-info {
+        display: grid;
+        column-gap: 0.7em;
+        row-gap: 0.6em;
+
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+        grid-template-areas:
+            " content"
+            "prizes"
+            "footer"
+        ;
+
+        align-items: center;
+
+        background-color: var(--claro);
+        max-width: 75vw;
+        height: auto;
+        margin: 0 auto;
+        padding: 2%;
+
+        border-radius: 0.6em;
+    }
+
+    #title {
+        font-size: 6vw;
+    }
+
+    html {
+        font-size: 3vw;
+    }
+
+    blockquote {
+
+        font-size: 3vw;
+        font-style: italic;
+        font-weight: bolder;
+        line-height: 4vh;
+        color: black;
+
+    }
+
+}
+
+#awards {
+    width: 80%;
+    height: auto;
+    padding-bottom: 2vh;
+    border-bottom: 0.1em solid var(--claro);
+}
+
+#briefBiography {
+
+    width: 60%;
+    height: auto;
+    padding-bottom: 2vh;
+    border-bottom: 0.1em solid var(--medio);
+}
